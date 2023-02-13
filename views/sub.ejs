@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sub of the Day</title>
+    <link rel="icon" href="images/logo.png">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <main>
+        <h1>Sub of the Day at <a class="mr-sub" href="https://mrsub.ca/" target="_blank">Mr. Sub</a></h1>
+        <% if (kindOfDay === "Sunday") { %>
+            <h2>Today is <%= kindOfDay %>!</h2>
+            <h3>Spicy Breaded Chicken</h3>
+            <img src="images/sunday-breaded-chicken.jpg" alt="spicy breaded chicken" width="960" height="461">
+        <% } else if (kindOfDay === "Monday") { %>
+            <h2>Today is <%= kindOfDay %>!</h2>
+            <h3>Grilled Chicken</h3>
+            <img src="images/monday-grilled-chicken.jpg" alt="grilled chicken" width="960" height="461">
+        <% } else if (kindOfDay === "Tuesday") { %>
+            <h2>Today is <%= kindOfDay %>!</h2>
+            <h3>Smoked Meat</h3>
+            <img src="images/tuesday-smoked-meat.jpg" alt="smoked meat" width="960" height="461">
+        <% } else if (kindOfDay === "Wednesday") { %>
+            <h2>Today is <%= kindOfDay %>!</h2>
+            <h3>Louisiana Pepper Chicken</h3>
+            <img src="images/wednesday-louisiana-chicken.jpg" alt="louisiana pepper chicken" width="960" height="461">
+        <% } else if (kindOfDay === "Thursday") { %>
+            <h2>Today is <%= kindOfDay %>!</h2>
+            <h3>Meatball</h3>
+            <img src="images/thursday-meatball.jpg" alt="meatball sub" width="960" height="461">
+        <% } else if (kindOfDay === "Friday") { %>
+            <h2>Today is <%= kindOfDay %>!</h2>
+            <h3>Tuna</h3>
+            <img src="images/friday-tuna.jpg" alt="tuna sub" width="960" height="461">
+        <% } else { %>
+            <h2>Today is <%= kindOfDay %>!</h2>
+            <h3>Turkey</h3>
+            <img src="images/saturday-turkey.webp" alt="turkey sub" width="960" height="461">
+        <% } %>
+    </main>
+    <footer><small>&copy;2023 Sub of the Day</small></footer>
+</body>
+</html>

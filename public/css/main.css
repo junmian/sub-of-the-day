@@ -1,0 +1,112 @@
+body, h1, h2, h3 {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #DEDFDA;
+    text-align: center;
+    color: #BC2533;
+    padding: 2%;
+}
+
+main {
+    display: block;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+h2, h3 {
+    font-size: 2.5rem;
+    padding-top: 1rem;
+}
+
+img {
+    max-width: 98%;
+    height: auto;
+    margin-top: 1rem;
+    border: 5px solid #BC2533;
+    border-radius: 10px;
+}
+
+.mr-sub:link, .mr-sub:visited {
+    color: #BC2533;
+}
+
+.mr-sub:link {
+    text-decoration: none;
+    position: relative;
+}
+
+.mr-sub::before {
+    content: '';
+    background-color: #BC2533;
+    position: absolute;
+    left: 0;
+    bottom: 3px;
+    width: 100%;
+    height: 5px;
+    z-index: -1;
+    transition: all .3s ease-in-out;
+}
+
+.mr-sub:hover::before {
+    bottom: 0;
+    height: 100%;
+}
+
+.mr-sub:hover {
+    color: white;
+}
+
+.mr-sub:active {
+    box-shadow: 2px 2px 5px #000000;
+}
+
+footer {
+    margin-top: 2rem;
+    font-size: 1.5rem;
+}
+
+/* Media Queries */
+@media (max-width: 800px) {
+    body {
+        margin-top: 1rem;
+    }
+    h1 {
+        font-size: 2.5rem;
+    }
+    h2, h3 {
+        font-size: 2rem;
+        padding-top: 1.25rem;
+    }
+    img {
+        max-width: 90%;
+        margin-top: 1.25rem;
+    }
+    footer {
+        font-size: 1.25rem;
+    }
+}
+
+@media (max-width: 500px) {
+    body {
+        margin-top: 2rem;
+    }
+    h1 {
+        font-size: 2rem;
+    }
+    h2, h3 {
+        font-size: 1.75rem;
+        padding-top: 1.75rem;
+    }
+    img {
+        max-width: 80%;
+        margin-top: 1.75rem;
+    }
+    footer {
+        font-size: 1rem;
+    }
+}
